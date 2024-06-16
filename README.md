@@ -9,7 +9,7 @@ Download Docker Desktop: Download and install Docker Desktop from Docker's offic
 
 Clone the Repository: Clone this repository to your local machine using the following command:<br>
 
-git clone https://github.com/ChamodiLiyanage/Microservices-project---Course-Management-system.git
+git clone https://github.com/ChamodiLiyanage/Microservices-project---Course-Management-system.git<br>
 Open with Visual Studio Code: Open the cloned repository using Visual Studio Code or any other code editor of your choice.<br>
 
 Navigate to Backend Directory: Using your terminal, navigate to the 'backend' directory inside the cloned repository:<br>
