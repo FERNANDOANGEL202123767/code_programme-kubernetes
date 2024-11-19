@@ -11,6 +11,7 @@ const Page = (props: Props) => {
   const [open, setOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(2);
   const [route, setRoute] = useState("Login");
+  const [start, setStart] = useState(false);  // O el tipo adecuado
 
   return (
     <div>
@@ -25,6 +26,8 @@ const Page = (props: Props) => {
         activeItem={activeItem}
         setRoute={setRoute}
         route={route}
+        start={start}  
+        setStart={setStart} 
       />
       <About />
       <Footer />

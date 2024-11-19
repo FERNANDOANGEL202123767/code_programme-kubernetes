@@ -55,7 +55,7 @@ const Login: FC<Props> = ({ setRoute, setOpen, refetch }) => {
 
   return (
     <div className="w-full">
-      <h1 className={`${styles.title}`}>Login with Academy IQ</h1><br />
+      <h1 className={`${styles.title}`}>INICIAR SESION CODE PROGRAMME</h1><br />
       <form onSubmit={handleSubmit}>
         <label className={`${styles.label}`} htmlFor="email">
           Enter your Email

@@ -13,9 +13,16 @@ import { useGetAllUsersQuery } from "@/redux/features/user/userApi";
 import { AiOutlineMail } from "react-icons/ai";
 import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
 import { Modal } from "@mui/material";
-import jsPDF from "jspdf";
-import "jspdf-autotable";
 import { IoCloseOutline } from "react-icons/io5";
+// global.d.ts or similar declaration file
+import { jsPDF } from "jspdf";
+import "jspdf-autotable";
+
+declare module 'jspdf' {
+  interface jsPDF {
+    autoTable: any;
+  }
+}
 
 type Props = {
   isDashboard?: boolean;
@@ -59,21 +66,22 @@ const AllInvoices = ({ isDashboard }: Props) => {
 
   const handleGenerateReport = () => {
     // Create a new jsPDF instance
+ 
     const doc = new jsPDF();
-
+  
     // Define the title
     const title = "Financial Report";
-
+  
     // Calculate text width for center alignment
     const fontSize = 16; // Adjust as needed
     const textWidth =
       (doc.getStringUnitWidth(title) * fontSize) / doc.internal.scaleFactor;
     const textOffset = (doc.internal.pageSize.width - textWidth) / 2;
-
+  
     // Add the title to the PDF document
     doc.setFontSize(fontSize);
     doc.text(title, textOffset, 15);
-
+  
     // Prepare table data
     let tableData = rows.map((row: any) => [
       row.userName,
@@ -81,7 +89,7 @@ const AllInvoices = ({ isDashboard }: Props) => {
       row.title,
       row.price,
     ]);
-
+  
     // Calculate total income and total orders
     const totalIncome = rows.reduce(
       (total: number, row: any) =>
@@ -89,21 +97,22 @@ const AllInvoices = ({ isDashboard }: Props) => {
       0
     );
     const totalOrders = rows.length;
-
+  
     // Add summary rows to the table data
     tableData.push(["", "Total Orders:", totalOrders, ""]);
     tableData.push(["", "", "Total Income:", `$${totalIncome.toFixed(2)}`]);
-
+  
     // Set up the table columns and rows
     doc.autoTable({
       head: [["Name", "Email", "Course Title", "Price"]],
       body: tableData,
       startY: 25, // Offset from the top after the title
     });
-
+  
     // Save or download the PDF
     doc.save("financial_report.pdf");
   };
+  
 
   useEffect(() => {
     if (data) {
@@ -266,7 +275,7 @@ const AllInvoices = ({ isDashboard }: Props) => {
       )}
       {openInvoiceModal && (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-     <div className="w-144 bg-white rounded shadow-lg p-4 text-black">
+    <div className="w-144 bg-white rounded shadow-lg p-4 text-black">
       <div className="flex justify-between items-center mb-4"><br/><br/>
         <h2 className="text-lg font-bold text-center">INVOICE</h2>
         <IoCloseOutline

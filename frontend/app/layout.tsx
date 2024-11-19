@@ -12,8 +12,8 @@ import Loader from "./components/Loader/Loader";
 import socketIO from "socket.io-client";
 const ENDPOINT = process.env.NEXT_PUBLIC_SOCKET_SERVER_URI || "";
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
-import ShoppingCartModal from "../app/components/cart/ShoppingCartModal";
-import ShoppingCartModalTest from "../app/components/cart/ShoppingCartModalTest";
+import ShoppingCartModal from "./components/cart/ShoppingCartModal";
+import ShoppingCartModalTest from "./components/cart/ShoppingCartModalTest";
 import CartProvider from "../providers/CartProvider";
 
 const poppins = Poppins({

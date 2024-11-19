@@ -131,7 +131,7 @@ const Footer = () => {
               Address: SLIIT Malabe Campus, New Kandy Rd, Malabe 10115
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-              Mail Us: academyiq.lk@gmail.com
+              Mail Us: CODE PROGRAMME.lk@gmail.com
             </p>
           </div>
         </div>
@@ -139,7 +139,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-8 border-t border-gray-300 dark:border-gray-800 text-center text-gray-600 dark:text-white">
           <p className="py-4">
-            &copy; {new Date().getFullYear()} Academy IQ. All Rights Reserved.
+            &copy; {new Date().getFullYear()} CODE PROGRAMME. All Rights Reserved.
           </p>
         </div>
       </div>

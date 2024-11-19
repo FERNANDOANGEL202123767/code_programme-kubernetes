@@ -7,18 +7,18 @@ type Props = {};
 
 export const reviews = [
   {
-    name: "Gene Bates",
+    name: "Mora Ivan",
     avatar: "https://randomuser.me/api/portraits/men/1.jpg",
-    profession: "Student | Cambridge university",
+    profession: "Estudiante | TESJI",
     comment:
-      "I had the pleasure of exploring Becodemy, a website that provides an extensive range of courses on various tech-related topics. I was thoroughly impressed with my experience, as the website offers a comprehensive selection of courses that cater to different skill levels and interests. If you're looking to enhance your knowledge and skills in the tech industry, I highly recommend checking out Becodemy!",
+      "Tuve el placer de explorar CODE PROGRAMME, un sitio web que ofrece una amplia gama de cursos sobre diversos temas relacionados con la tecnología. Me impresionó muchísimo mi experiencia, ya que el sitio web ofrece una selección completa de cursos que se adaptan a diferentes niveles de habilidades e intereses. Si buscas mejorar tus conocimientos y habilidades en la industria tecnológica, te recomiendo que consultes CODE PROGRAMME!",
   },
   {
-    name: "Laura Mckenzie",
+    name: "Anita",
     avatar: "https://randomuser.me/api/portraits/women/4.jpg",
-    profession: "Full stack web developer | Canada",
+    profession: "Desarrollador web full stack | Mexico",
     comment:
-      "Join Academy IQ! Academy IQ focuses on practical applications rather than just teaching the theory behind programming languages or frameworks. I took a lesson on creating a web marketplace using React JS, and it was very helpful in teaching me the different stages involved in creating a project from start to finish. Overall, I highly recommend Academy IQ to anyone looking to improve their programming skills and build practical projects. Academy IQ is a great resource that will help you take your skills to the next level.",
+      "¡Únete a CODE PROGRAMME! CODE PROGRAMME se centra en aplicaciones prácticas en lugar de simplemente enseñar la teoría detrás de los lenguajes o marcos de programación. Tomé una lección sobre cómo crear un mercado web usando React JS y me resultó muy útil para aprender las diferentes etapas involucradas en la creación de un proyecto de principio a fin. En general, recomiendo encarecidamente CODE PROGRAMME a cualquiera que busque mejorar sus habilidades de programación y crear proyectos prácticos. CODE PROGRAMME es un gran recurso que te ayudará a llevar tus habilidades al siguiente nivel..",
   },
 ];
 
@@ -26,8 +26,8 @@ const Reviews = (props: Props) => {
   return (
     <div className="w-[90%] 800px:w-[85%] m-auto">
       <h3 className={`${styles.title} 800px:!text-[40px]`}>
-        Our Students Are <span className="text-gradient">Our Strength</span>{" "}
-        <br /> See What They Say About Us
+        Nuestros Estudiantes Son<span className="text-gradient">Nuestra Fortaleza</span>{" "}
+        <br /> Mira Lo Que Dicen Nosotros
       </h3>
       <br />
       <br />

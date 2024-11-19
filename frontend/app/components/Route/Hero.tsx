@@ -32,9 +32,10 @@ const Hero: FC<Props> = (props) => {
       <div className="w-full 1000px:flex items-center">
         <div className="1000px:w-[40%] flex 1000px:max-h-screen items-center justify-end pt-[70px] 1000px:pt-[0] z-10">
         <Image
-          src={data?.layout?.banner?.image?.url}
-          width={500}
-          height={500}
+          //src={data?.layout?.banner?.image?.url}
+          src={require("../../../public/assests/code.png")}
+          width={50}
+          height={90}
           alt=""
           className="object-contain 1100px:max-w-[90%] w-[90%] 1500px:max-w-[85%] h-[auto] z-[10]"
         />
@@ -52,7 +53,7 @@ const Hero: FC<Props> = (props) => {
         <div className="1500px:w-[55%] 1100px:w-[78%] w-[90%] h-[50px] bg-transparent relative">
           <input
             type="search"
-            placeholder="Search Courses..."
+            placeholder="Busca Cursos..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="bg-transparent border dark:border-none dark:bg-[#575757] dark:placeholder:text-[#ffffffdd] rounded-[5px] p-2 w-full h-full outline-none text-[#0000004e] dark:text-[#ffffffe6] text-[20px] font-[500] font-Poppins"
@@ -82,12 +83,12 @@ const Hero: FC<Props> = (props) => {
             className="rounded-full ml-[-20px]"
           />
           <p className="font-Poppins dark:text-[#edfff4] text-[#000000b3] 1000px:pl-3 text-[18px] font-[600]">
-            500K+ People already trusted us.{" "}
+            Más de 500K+ Personas ya han confiado en nosotros.{" "}
             <Link
               href="/courses"
               className="dark:text-[#46e256] text-[crimson]"
             >
-              View Courses
+              Ver Cursos
             </Link>{" "}
           </p>
         </div>

@@ -3,19 +3,19 @@ import React from "react";
 
 export const navItemsData = [
   {
-    name: "Home",
+    name: "INICIO",
     url: "/",
   },
   {
-    name: "Courses",
+    name: "CURSOS",
     url: "/courses",
   },
   {
-    name: "About",
+    name: "ACERCA DE",
     url: "/about",
   },
   {
-    name: "Policy",
+    name: "POLITICA",
     url: "/policy",
   },
   {

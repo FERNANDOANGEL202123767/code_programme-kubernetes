@@ -118,7 +118,7 @@ const Header: FC<Props> = ({
                     href={"/"}
                     className={`text-[40px] font-jaro font-[500] text-black dark:text-white`}
                   >
-                    ACADEMY IQ
+                    CODE PROGRAMME
                   </Link>
                 </div>
                 <div className="flex items-center space-x-4">

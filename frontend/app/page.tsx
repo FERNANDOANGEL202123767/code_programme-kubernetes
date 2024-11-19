@@ -18,7 +18,7 @@ const Page: FC<Props> = (props) => {
   return (
     <div>
       <Heading
-        title="ACADEMY IQ"
+        title="CODE PROGRAMME"
         description="ACADEMY IQ is a platform for students to learn and get help from teachers"
         keywords="Prograaming,MERN,Redux,Machine Learning"
       />
